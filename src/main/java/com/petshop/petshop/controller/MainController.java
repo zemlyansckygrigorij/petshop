@@ -16,7 +16,7 @@ import static org.springframework.http.HttpStatus.OK;
 @org.springframework.web.bind.annotation.RestController
 
 public class MainController {
- /*   @Autowired
+    @Autowired
     PetService petService;
 
 //    @GetMapping("/")
@@ -38,7 +38,7 @@ public class MainController {
     public String list(Model model){
        model.addAttribute("pet", new Pet());
        model.addAttribute("petList", petService.petList());
-       return "index";
+       return "index1";
     }
 
     @GetMapping("/delete/{id}")
@@ -52,6 +52,6 @@ public class MainController {
         model.addAttribute("pet", petService.getPetbyId(id));
         return "updated";
     }
-*/
+
 
 }
