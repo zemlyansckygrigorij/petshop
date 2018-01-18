@@ -10,9 +10,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import static org.springframework.http.HttpStatus.OK;
-
+@CrossOrigin
 @Controller
 @RequiredArgsConstructor (onConstructor = @_(@Autowired))
+@org.springframework.web.bind.annotation.RestController
+
 public class MainController {
     @Autowired
     PetService petService;
